@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize the container as a flexbox */
+            display: flex;
+
+
+            /* FLEX PROPERTIES for the flex CONTAINER (by default is row) */
+            /* this property into last style apply */
+            /* flex-direction: row; */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap;  (default value is no wrap) */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row reverse wrap; */
+            /*(this is a shorthand for flex-direction and flex-wrap)*/
+
+            /* justify the content on horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* justify the content on vertical direction          align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* FLEX PROPERTIES for a flex ITEM */
+        /*higher the order,later it shows up in the container */
+        #item-1 {
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+        }
+
+        #item-2 {
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            flex-basis: 160px;
+            /* When flex-direction is set to row flex basis:will control width */
+            /* When flex-direction is set to column flex basis:will control height*/
+
+        }
+
+        #item-3 {
+            flex: 2 2 230px;
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+    </style>
+</head>
+<h1>This is Flexbox tutorial</h1>
+<div class="container">
+    <!-- div.item#item-$* -->
+    <div class="item" id="item-1">First box</div>
+    <div class="item" id="item-2">Second box</div>
+    <div class="item" id="item-3">Third box</div>
+    <!-- <div class="item" id="item-4">Fourth box</div> -->
+    <!-- <div class="item" id="item-5">Fifth box</div> -->
+    <!-- <div class="item" id="item-6">Sixth box</div> -->
+</div>
+
+<body>
+
+</body>
+
+</html>

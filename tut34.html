@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+
+            /* box-shadow:offset-x offset-y color; */
+            /* box-shadow:offset-x offset-y blur-radius color; */
+            /* box-shadow:offset-x offset-y blur-radius spread-radius color; */
+
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: -7px -5px 10px green; */
+            box-shadow: -7px -5px 10px 34px rgba(55, 88, 55, 123);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- div.card#card-$*3 -->
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo labore quibusdam voluptatibus consectetur
+                provident hic quis laboriosam porro ut distinctio! Consequuntur illo tempora neque doloremque nam. Ab
+                beatae quia nihil? Rerum quisquam laboriosam fuga!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum cumque deleniti autem repellat dolorem
+                minus nam repudiandae placeat reiciendis provident veritatis porro culpa iure unde qui, explicabo
+                assumenda minima itaque quam. Cupiditate, iusto eius!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi voluptates voluptas omnis veniam
+                perferendis enim amet praesentium culpa mollitia vitae earum maiores, quaerat vel. Animi, odit nobis.
+                Culpa illum dignissimos ipsum deserunt rerum vitae?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
